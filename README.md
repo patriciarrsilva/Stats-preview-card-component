@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/mobile-first-site-using-sass-and-bem-8l2AJmqX1)
-- Live Site URL: [Add live site URL here](https://patriciarrsilva.github.io/Stats-preview-card-component/)
+- [Solution URL](https://www.frontendmentor.io/solutions/mobile-first-site-using-sass-and-bem-8l2AJmqX1)
+- [Live Site URL](https://patriciarrsilva.github.io/Stats-preview-card-component/)
 
 ## My process
 
