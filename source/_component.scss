@@ -1,0 +1,142 @@
+@use 'variables';
+
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  background: variables.$blue-desaturated-dark;
+  border-radius: variables.$radius;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  font-family: variables.$inter;
+  overflow: hidden;
+  text-align: center;
+
+  &__image {
+    filter: sepia(50%) saturate(250%) hue-rotate(242deg);
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    padding: variables.$spacing-m;
+  }
+
+  &__title {
+    background-color: inherit;
+    color: variables.$white;
+    font-size: variables.$font-m;
+    line-height: variables.$line-s;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__accent {
+    background-color: unset;
+    color: variables.$violet-soft;
+  }
+
+  &__copy {
+    background-color: inherit;
+    color: variables.$white-transparent-75;
+    font-size: variables.$font-s;
+    line-height: variables.$line-m;
+    margin: variables.$spacing-xs 0 variables.$spacing-xl;
+  }
+
+  &__stats {
+    background-color: inherit;
+    color: variables.$white;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.stats {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: variables.$spacing-s;
+
+    &:last-child {
+      padding: 0;
+    }
+  }
+
+  &__value {
+    font-size: variables.$font-m;
+    font-weight: bold;
+    padding-bottom: variables.$spacing-xxxs;
+
+    &--uppercase {
+      text-transform: uppercase;
+    }
+  }
+
+  &__copy {
+    background-color: inherit;
+    color: variables.$white-transparent-60;
+    font-size: variables.$font-xs;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: variables.$tablet-width) {
+  .card {
+    flex-direction: row-reverse;
+    height: variables.$card-height;
+    text-align: left;
+
+    &__picture {
+      flex: 1 1 0;
+    }
+
+    &__body {
+      flex: 1 1 0;
+      padding: variables.$spacing-xxxl 0
+        variables.$spacing-xxl;
+
+      > * {
+        padding: 0 8vw 0 5vw;
+      }
+    }
+
+    &__title {
+      font-size: variables.$font-xl;
+    }
+
+    &__copy {
+      margin-bottom: auto;
+    }
+
+    &__stats {
+      flex-direction: row;
+    }
+  }
+
+  .stats {
+    justify-content: space-between;
+
+    &__item {
+      padding: 0;
+    }
+
+    &__copy {
+      font-family: variables.$lexend-deca;
+    }
+  }
+}
+
+@media screen and (min-width: variables.$laptop-width) {
+  .card__body > * {
+    padding: 0 14vw 0 5vw;
+  }
+}

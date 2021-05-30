@@ -1,0 +1,47 @@
+// primary colors
+$blue-desaturated-dark: hsl(244, 38%, 16%);
+$blue-very-dark: hsl(233, 47%, 7%);
+$violet: hsl(228, 45%, 44%);
+$violet-soft: hsl(277, 64%, 61%);
+
+// neutral colors
+$white: hsl(0, 0%, 100%);
+$white-transparent-75: hsla(0, 0%, 100%, 0.75);
+$white-transparent-60: hsla(0, 0%, 100%, 0.6);
+
+// font family
+$inter: 'Inter', sans-serif;
+$lexend-deca: 'Lexend Deca', sans-serif;
+
+// font-size
+$font-xxs: 11px;
+$font-xs: 12px;
+$font-s: 15px;
+$font-m: 25px;
+$font-l: 28px;
+$font-xl: 32px;
+
+// line-height
+$line-s: 1.2;
+$line-m: 1.7;
+
+// spacing
+$spacing-xxxs: 8px;
+$spacing-xxs: 14px;
+$spacing-xs: 25px;
+$spacing-s: 30px;
+$spacing-m: 35px;
+$spacing-l: 40px;
+$spacing-xl: 45px;
+$spacing-xxl: 60px;
+$spacing-xxxl: 80px;
+
+// border-radius
+$radius: 5px;
+
+// height
+$card-height: 445px;
+
+// screen
+$tablet-width: 768px;
+$laptop-width: 1280px;

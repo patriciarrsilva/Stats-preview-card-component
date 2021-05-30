@@ -1,0 +1,20 @@
+@use 'variables';
+
+.body {
+  background: variables.$blue-very-dark;
+  color: inherit;
+  padding: variables.$spacing-s;
+}
+
+.attribution {
+  background-color: inherit;
+  color: variables.$white;
+  font: variables.$font-xxs variables.$lexend-deca;
+  padding-top: variables.$spacing-s;
+  text-align: center;
+
+  &__link {
+    background-color: inherit;
+    color: variables.$violet;
+  }
+}
